@@ -60,7 +60,7 @@ github "xquartz",     "1.2.1"
 github "python",      "2.0.1"
 github "zsh",         "1.0.0"
 github "zsh",         "1.0.0"
-github "ohmyzsg",     "1.0.0", :repo => "erivello/puppet-ohmyzsh"
+github "ohmyzsh",     "1.0.0", :repo => "erivello/puppet-ohmyzsh"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

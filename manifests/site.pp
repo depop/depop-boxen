@@ -56,7 +56,8 @@ node default {
   include dnsmasq
   include git
   include hub
-  include nginx
+  # TODO - is nginx required?
+  # include nginx
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -64,13 +65,23 @@ node default {
   }
 
   # node versions
-  nodejs::version { '0.10': }
-  nodejs::version { '0.12': }
+  nodejs::version { '4.0.0': }
+  class { 'nodejs::global':
+    version => '4.0.0'
+  }
 
   # default ruby versions
   ruby::version { '2.0.0': }
   ruby::version { '2.1.8': }
   ruby::version { '2.2.4': }
+
+  # vagrant + virtualbox
+  # TODO: need to write a virtualbox module that uses brew cask
+  # TODO: need to install Oracle VM virtualbox extension pack (think one of the existing modules has support for doing this)
+  # include virtualbox
+  # TODO: need to upgrade version to 1.8.1
+  # include vagrant
+
 
   # common, useful packages
   package {

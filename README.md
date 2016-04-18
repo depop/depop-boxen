@@ -76,8 +76,7 @@ The following are provided by default:
 * Git
 * Hub
 * rbenv
-* Nodejs 0.10
-* Nodejs 0.12
+* Nodejs 4.0.0.
 * Full Disk Encryption requirement
 * Ruby 2.0.0
 * Ruby 2.1.8

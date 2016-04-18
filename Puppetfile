@@ -38,6 +38,7 @@ github "module_data", "0.0.4", :repo => "ripienaar/puppet-module-data"
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
+dev    "gpgtools"
 github "brewcask",    "0.0.6"
 github "dnsmasq",     "2.0.1"
 github "foreman",     "1.2.0"
@@ -61,6 +62,7 @@ github "python",      "2.0.1"
 github "zsh",         "1.0.0"
 github "zsh",         "1.0.0"
 github "ohmyzsh",     "1.0.0", :repo => "erivello/puppet-ohmyzsh"
+github "vagrant",     "3.3.4"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
